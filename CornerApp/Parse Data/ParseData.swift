@@ -13,10 +13,10 @@ class ParseData {
     var wsbfvl_round  = WSBFvl_Round()
     func requestData(completion: ((_ data: WSBFvl_Round) -> Void)) {
         
-        do {
-            let data = try String(contentsOfFile: "//Users/karthiklakshmanan/Desktop/CornerApp/CornerApp/csv/WSBFvI_Round1.csv", encoding: String.Encoding.utf8)
-            
-            var parsedCSV: [[String:CustomStringConvertible]] = data
+        if let path = Bundle.main.path(forResource: "WSBFvI_Round1", ofType: "csv") {
+           do {
+            let data = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+             var parsedCSV: [[String:CustomStringConvertible]] = data
                 .components(separatedBy: "\n")
                 .map({
                     var result = [String: CustomStringConvertible]()
@@ -55,7 +55,8 @@ class ParseData {
             print("No CSV file found")
         }
         completion(wsbfvl_round)
-    }
+        }
+     }
     
 }
 

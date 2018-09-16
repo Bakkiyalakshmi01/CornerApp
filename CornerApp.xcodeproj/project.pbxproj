@@ -36,7 +36,7 @@
 		79226DDD214C2343001D720B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79226DDF214C2343001D720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79226DE6214C2390001D720B /* WSBFvl_Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSBFvl_Round.swift; sourceTree = "<group>"; };
-		79226DE9214C23D0001D720B /* ParseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseData.swift; sourceTree = "<group>"; };
+		79226DE9214C23D0001D720B /* ParseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseData.swift; path = "CornerApp/Parse Data/ParseData.swift"; sourceTree = SOURCE_ROOT; };
 		79226DEC214C2437001D720B /* LeftHandPunchesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftHandPunchesView.xib; sourceTree = "<group>"; };
 		79226DEE214C244C001D720B /* RightHandPunchesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightHandPunchesView.xib; sourceTree = "<group>"; };
 		79226DF0214C2461001D720B /* LeftHandPunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftHandPunchesView.swift; sourceTree = "<group>"; };
