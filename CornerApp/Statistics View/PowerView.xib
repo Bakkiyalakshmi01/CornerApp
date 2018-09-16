@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fontfabric - IntroSemiBoldAlt.otf">
+            <string>IntroSemiBoldAlt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PowerView" customModule="CornerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="g" destination="8PT-Dg-Zb8" id="ieJ-mh-IVT"/>
+                <outlet property="power" destination="1bV-bg-vmk" id="ztV-ZI-pzy"/>
+                <outlet property="powerValue" destination="3wI-Or-meo" id="g4Y-yF-Maw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="soS-pQ-bSe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wI-Or-meo">
+                    <rect key="frame" x="0.0" y="308.5" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KmZ-TV-dBJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IntroSemiBoldAlt" family="Intro" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power (avg)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bV-bg-vmk">
+                    <rect key="frame" x="0.0" y="288.5" width="375" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FPx-w4-DpY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IntroSemiBoldAlt" family="Intro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PT-Dg-Zb8">
+                    <rect key="frame" x="0.0" y="358.5" width="375" height="17"/>
+                    <fontDescription key="fontDescription" name="IntroSemiBoldAlt" family="Intro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3wI-Or-meo" firstAttribute="top" secondItem="1bV-bg-vmk" secondAttribute="bottom" id="7Gz-2J-7ND"/>
+                <constraint firstItem="8PT-Dg-Zb8" firstAttribute="top" secondItem="3wI-Or-meo" secondAttribute="bottom" id="BCA-v7-52F"/>
+                <constraint firstItem="1bV-bg-vmk" firstAttribute="leading" secondItem="tVK-oB-tQR" secondAttribute="leading" id="OJa-hO-NAI"/>
+                <constraint firstItem="tVK-oB-tQR" firstAttribute="trailing" secondItem="1bV-bg-vmk" secondAttribute="trailing" id="g51-ty-ghI"/>
+                <constraint firstItem="3wI-Or-meo" firstAttribute="centerY" secondItem="soS-pQ-bSe" secondAttribute="centerY" id="laL-DD-pcZ"/>
+                <constraint firstItem="8PT-Dg-Zb8" firstAttribute="leading" secondItem="tVK-oB-tQR" secondAttribute="leading" id="neR-fY-ymS"/>
+                <constraint firstItem="tVK-oB-tQR" firstAttribute="trailing" secondItem="3wI-Or-meo" secondAttribute="trailing" id="ng0-Hf-rzT"/>
+                <constraint firstItem="3wI-Or-meo" firstAttribute="leading" secondItem="tVK-oB-tQR" secondAttribute="leading" id="p1y-1Y-c57"/>
+                <constraint firstItem="tVK-oB-tQR" firstAttribute="trailing" secondItem="8PT-Dg-Zb8" secondAttribute="trailing" id="qKu-Vu-Ea9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="tVK-oB-tQR"/>
+        </view>
+    </objects>
+</document>

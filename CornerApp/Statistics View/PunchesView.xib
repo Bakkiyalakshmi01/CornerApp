@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fontfabric - IntroSemiBoldAlt.otf">
+            <string>IntroSemiBoldAlt</string>
+        </array>
+        <array key="Fontfabric - IntroSemiBoldItalic.otf">
+            <string>IntroSemiBoldItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PunchesView" customModule="CornerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="punches" destination="iAg-MJ-mTG" id="a1b-ez-gZD"/>
+                <outlet property="punchesValue" destination="Rcm-jy-HT4" id="JKF-7m-l2f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bWc-1i-WoW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcm-jy-HT4">
+                    <rect key="frame" x="0.0" y="308.5" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VeL-XE-GYu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IntroSemiBoldItalic" family="Intro" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAg-MJ-mTG">
+                    <rect key="frame" x="0.0" y="288.5" width="375" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FR3-eX-QA5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IntroSemiBoldAlt" family="Intro" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Rcm-jy-HT4" firstAttribute="leading" secondItem="ojq-MI-Y5T" secondAttribute="leading" id="67L-U4-JVj"/>
+                <constraint firstItem="ojq-MI-Y5T" firstAttribute="trailing" secondItem="iAg-MJ-mTG" secondAttribute="trailing" id="Dwm-c0-4Cz"/>
+                <constraint firstItem="Rcm-jy-HT4" firstAttribute="centerY" secondItem="bWc-1i-WoW" secondAttribute="centerY" id="NGk-gD-1CG"/>
+                <constraint firstItem="ojq-MI-Y5T" firstAttribute="trailing" secondItem="Rcm-jy-HT4" secondAttribute="trailing" id="SNH-aQ-ryb"/>
+                <constraint firstItem="iAg-MJ-mTG" firstAttribute="leading" secondItem="ojq-MI-Y5T" secondAttribute="leading" id="ZjH-vp-6MD"/>
+                <constraint firstItem="Rcm-jy-HT4" firstAttribute="centerX" secondItem="bWc-1i-WoW" secondAttribute="centerX" id="qZq-Rs-kSp"/>
+                <constraint firstItem="Rcm-jy-HT4" firstAttribute="top" secondItem="iAg-MJ-mTG" secondAttribute="bottom" id="y11-NF-Bu0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ojq-MI-Y5T"/>
+        </view>
+    </objects>
+</document>
