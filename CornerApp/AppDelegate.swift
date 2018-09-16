@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CornerApp
 //
-//  Created by Karthik Lakshmanan on 14/09/2018.
+//  Created by Bakkiya on 14/09/2018.
 //  Copyright © 2018 Bakkiya. All rights reserved.
 //
 
